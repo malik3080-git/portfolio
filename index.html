@@ -3,61 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio étudiant en Réseaux et Télécommunications - Présentation de projets et certifications.">
+  <meta name="keywords" content="portfolio, réseaux, télécommunications, cybersécurité, étudiant, projets, certifications">
   <title>Portfolio - Ton Nom</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    });
+  </script>
 </head>
-<body class="bg-gray-100 text-gray-900">
-  <!-- Header -->
-  <header class="p-6 bg-white shadow-md">
-    <div class="max-w-4xl mx-auto">
-      <h1 class="text-4xl font-bold">Ton Nom</h1>
-      <p class="text-lg text-gray-600">Étudiant en Réseaux & Cybersécurité</p>
+<body class="bg-gray-900 text-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-gray-800 shadow-md py-4 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-indigo-400"> DIALLO MALIK MAHAMADOU</div>
+      <ul class="flex space-x-6 text-sm font-medium">
+        <li><a href="#about" class="hover:text-indigo-400">À propos</a></li>
+        <li><a href="#projects" class="hover:text-indigo-400">Projets</a></li>
+        <li><a href="#certifications" class="hover:text-indigo-400">Certifications</a></li>
+        <li><a href="#contact" class="hover:text-indigo-400">Contact</a></li>
+      </ul>
     </div>
-  </header>
+  </nav>
 
-  <!-- Main content -->
-  <main class="p-6 max-w-4xl mx-auto">
-    <!-- Section: Présentation -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-2">À propos</h2>
-      <p>Je suis passionné par la cybersécurité, les réseaux et l’analyse de vulnérabilités. Voici quelques projets réalisés dans le cadre de ma formation.</p>
-    </section>
+  <!-- Hero section -->
+  <section class="bg-indigo-700 text-white py-20 text-center" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Portfolio Étudiant</h1>
+      <p class="text-lg md:text-xl">Réseaux & Télécommunications | Projets pratiques & démonstrations</p>
+    </div>
+  </section>
 
-    <!-- Section: Projets -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-4">Projets</h2>
-      <div class="space-y-6">
-        <div class="p-4 bg-white shadow rounded">
-          <h3 class="text-xl font-bold">Scan de réseau avec Nmap</h3>
-          <p class="text-gray-700">Utilisation de Nmap pour scanner un réseau local, identifier les services et détecter d’éventuelles vulnérabilités.</p>
-          <a href="#" class="text-blue-600 hover:underline">Voir le projet</a>
+  <!-- About section -->
+  <section id="about" class="py-16 px-6 max-w-4xl mx-auto" data-aos="fade-right">
+    <h2 class="text-3xl font-bold mb-4 text-indigo-300">À propos de moi</h2>
+    <p class="text-gray-300 leading-relaxed">Étudiant en Réseaux et Systèmes de Télécommunications à l'ENSA de Kénitra (promo 2025), passionné par la cybersécurité, l'analyse de données et le développement d'applications web. Ce portfolio présente une sélection de mes projets académiques et personnels.</p>
+  </section>
+
+  <!-- Projects section -->
+  <section id="projects" class="bg-gray-800 py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-10 text-center text-indigo-300" data-aos="zoom-in">Mes Projets</h2>
+      <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Project Cards -->
+        <div class="bg-gray-700 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-500 transform hover:-translate-y-1" data-aos="flip-left">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2 text-white">Smart City Network</h3>
+            <p class="text-sm text-gray-300 mb-3">Conception d'un réseau Smart City avec Cisco Packet Tracer & GNS3, configuration d'adressage IPv4 (statique & dynamique) et routage (statique & EIGRP).</p>
+          </div>
         </div>
-
-        <div class="p-4 bg-white shadow rounded">
-          <h3 class="text-xl font-bold">Configuration d’un réseau local</h3>
-          <p class="text-gray-700">Mise en place d’un réseau local avec un routeur, un switch et plusieurs postes. Configuration des adresses IP et du DHCP.</p>
-          <a href="#" class="text-blue-600 hover:underline">Voir le projet</a>
+        <div class="bg-gray-700 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-500 transform hover:-translate-y-1" data-aos="flip-up">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2 text-white">Analyse de données avec R</h3>
+            <p class="text-sm text-gray-300 mb-3">Étude sur l’employabilité des étudiants à travers le traitement statistique des données avec le logiciel R. Travail en groupe : collecte, analyse et interprétation.</p>
+          </div>
         </div>
-
-        <div class="p-4 bg-white shadow rounded">
-          <h3 class="text-xl font-bold">Analyse de vulnérabilités sur une VM</h3>
-          <p class="text-gray-700">Utilisation d’une machine virtuelle vulnérable pour apprendre le pentest. Scans, exploitation et rapport d’analyse.</p>
-          <a href="#" class="text-blue-600 hover:underline">Voir le projet</a>
+        <div class="bg-gray-700 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-500 transform hover:-translate-y-1" data-aos="flip-right">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2 text-white">Application Web ENSAK</h3>
+            <p class="text-sm text-gray-300 mb-3">Développement d'une plateforme de gestion des projets étudiants en HTML, CSS, PHP & MySQL, permettant un accès aux projets par nom d’étudiant.</p>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Section: Contact -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-2">Contact</h2>
-      <p>Tu peux me contacter à l’adresse suivante :</p>
-      <p class="text-blue-600">ton.email@example.com</p>
-    </section>
-  </main>
+  <!-- Certifications section -->
+  <section id="certifications" class="py-16 px-6 max-w-6xl mx-auto" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-10 text-center text-indigo-300">Mes Certifications</h2>
+    <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- Certification Cards -->
+
+      <!-- PSC1 -->
+      <div class="bg-gray-800 rounded-xl p-6 text-center shadow-lg" data-aos="zoom-in">
+        <img src="pompier.jpg" alt="Logo PSC1" class="w-16 mx-auto mb-4">
+        <h3 class="text-xl font-bold mb-2">Prévention et Secours Civiques - Niveau 1</h3>
+        <p class="text-sm text-gray-400 mb-2">Formation certifiée</p>
+        <p class="italic text-sm text-gray-400 mb-4">Année 2025</p>
+        
+        <a href="#" class="bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded-xl inline-block text-sm">Voir le certificat</a>
+      </div>
+
+      <!-- Incendie -->
+      <div class="bg-gray-800 rounded-xl p-6 text-center shadow-lg" data-aos="zoom-in">
+        <img src="pompier.jpg" alt="Logo Incendie" class="w-16 mx-auto mb-4">
+        <h3 class="text-xl font-bold mb-2">Sensibilisation à la Sécurité Incendie</h3>
+        <p class="text-sm text-gray-400 mb-2">Formation certifiée</p>
+        <p class="italic text-sm text-gray-400 mb-4">Année 2025</p>
+        
+        <a href="#" class="bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded-xl inline-block text-sm">Voir le certificat</a>
+      </div>
+
+      <!-- Cisco Networking Basics -->
+      <div class="bg-gray-800 rounded-xl p-6 text-center shadow-lg" data-aos="zoom-in">
+        <img src="Emblème-Cisco.jpg" alt="Cisco Logo" class="w-16 mx-auto mb-4">
+        <h3 class="text-xl font-bold mb-2">Networking Basics</h3>
+        <p class="text-sm text-gray-400 mb-2">Cisco Networking Academy</p>
+        <p class="italic text-sm text-gray-400 mb-4">Année 2025</p>
+        <img src="2.png" alt="Certificat" class="w-24 mx-auto mb-4">
+        <a href="certificat bases reseaux.pdf" class="bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded-xl inline-block text-sm">Voir le certificat</a>
+      </div>
+
+      <!-- Cisco Cybersecurity -->
+      <div class="bg-gray-800 rounded-xl p-6 text-center shadow-lg" data-aos="zoom-in">
+        <img src="Emblème-Cisco.jpg" alt="Cisco Logo" class="w-16 mx-auto mb-4">
+        <h3 class="text-xl font-bold mb-2">Introduction to Cybersecurity</h3>
+        <p class="text-sm text-gray-400 mb-2">Cisco Networking Academy</p>
+        <p class="italic text-sm text-gray-400 mb-4">Année 2025</p>
+        <img src="cybersecurity_16.png" alt="Certificat" class="w-24 mx-auto mb-4">
+        <a href="c:\Users\hp\Downloads\certificat introduction cybersecu.pdf" class="bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded-xl inline-block text-sm">Voir le certificat</a>
+      </div>
+
+      <!-- Cisco Data Science -->
+      <div class="bg-gray-800 rounded-xl p-6 text-center shadow-lg" data-aos="zoom-in">
+        <img src="Emblème-Cisco.jpg" alt="Cisco Logo" class="w-16 mx-auto mb-4">
+        <h3 class="text-xl font-bold mb-2">Introduction to Data Science</h3>
+        <p class="text-sm text-gray-400 mb-2">Cisco Networking Academy</p>
+        <p class="italic text-sm text-gray-400 mb-4">Année 2025</p>
+        <img src="DATA SCIENCE.png" alt="Certificat" class="w-24 mx-auto mb-4">
+        <a href="c:\Users\hp\Downloads\DATA SCIENCE.pdf" class="bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded-xl inline-block text-sm">Voir le certificat</a>
+      </div>
+
+      <!-- Cisco Ethical Hacker -->
+      <div class="bg-gray-800 rounded-xl p-6 text-center shadow-lg" data-aos="zoom-in">
+        <img src="Emblème-Cisco.jpg" alt="Cisco Logo" class="w-16 mx-auto mb-4">
+        <h3 class="text-xl font-bold mb-2">Cisco Ethical Hacker</h3>
+        <p class="text-sm text-gray-400 mb-2">Cisco Networking Academy</p>
+        <p class="italic text-sm text-gray-400 mb-4">Année 2025</p>
+        <img src="ETHICAL HACKER.png" alt="Certificat" class="w-24 mx-auto mb-4">
+        <a href="c:\Users\hp\Downloads\ethical hacker.pdf" class="bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded-xl inline-block text-sm">Voir le certificat</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact" class="py-16 px-6 max-w-4xl mx-auto" data-aos="fade-left">
+    <h2 class="text-3xl font-bold mb-4 text-indigo-300">Contact</h2>
+    <p class="mb-4 text-gray-300">Tu peux me contacter à l’adresse suivante :</p>
+    <a href="mailto:ton.email@example.com" class="text-indigo-400 hover:underline">ton.email@example.com</a>
+  </section>
 
   <!-- Footer -->
-  <footer class="p-4 text-center text-sm text-gray-500">
-    © 2025 Ton Nom - Portfolio
+  <footer class="bg-gray-800 text-center py-6 text-sm text-gray-400">
+    © 2025 Ton Nom - Portfolio. Réalisé avec ❤️ et Tailwind CSS.
   </footer>
 </body>
 </html>
